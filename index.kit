@@ -80,17 +80,18 @@
 <p>What type of job are you planning to pull?</p>
 </div><!-- cta-header -->
 
-<form>
-
+<form name="quote-form" method="POST" data-netlify="true">
 <!-- @import "/partials/_form-insurance" -->
 
 <div class="cta-footer">
+<form class="cta-footer" name="donate-form" method="POST" data-netlify="true">
 <label for="cta-email">Email</label>
 <input type="email" id="cta-email">
-<button disabled class="btn">Get quote</button>
+<button class="btn">Get quote</button>
 </div><!-- cta-footer -->
 
 </form>
+
 </div><!-- two -->
 
 </div><!-- grid -->
@@ -118,14 +119,15 @@
 <h2 data-size="2xl">Put a roof over an old lag&#8217;s head</h2>
 </div><!-- cta-header -->
 
-<form>
+<form name="donate-form" method="POST" data-netlify="true">
 
 <!-- @import "/partials/_cta-donate-frequency" -->
 <!-- @import "/partials/_form-donate" -->
 
 <div>
-<button disabled class="btn" data-width="block">Donate monthly</button>
+<button class="btn" data-width="block">Donate monthly</button>
 </div>
+
 </form>
 
 <hr class="alt--heavy">
