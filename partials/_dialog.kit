@@ -1,0 +1,16 @@
+<dialog id="dialog">
+
+<section>
+<h3>Get our newsletter</h3>
+<button id="dialog-close" class="btn" data-close>&#x2716</button>
+
+<form action="/error.html" method="POST" name="notify" data-netlify="true">
+<input type="hidden" name="subject" value="Cheeky Condiment stock notify" />
+<label for="notify-email" data-visibility="hidden">Wheelman newsletter</label>
+<input type="email" id="notify-email" name="notify-email" placeholder="you @ your domain" required>
+<p data-size="s">We swear we <u>won&#8217;t</u> spam you</p>
+<button type="submit" class="btn" id="showDialog">Okay!</button>
+</form>
+</section>
+
+</dialog>

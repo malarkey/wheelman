@@ -1,0 +1,91 @@
+<div class="newsletter">
+<a data-toggle="#dialog">
+<span data-visibility="hidden">Subscribe to the Wheelman newsletter and stay one step ahead</span>
+<!-- @import "/partials/_text-newsletter" -->
+</a>
+</div><!-- newsletter -->
+
+
+
+
+
+<footer role="contentinfo">
+
+<div>
+<h3 data-size="l">Wheelman examples</h3>
+<ul>
+<li><a href="/editorial/">Magazine</a></li>
+<li><a href="/editorial/article.html">Article</a></li>
+<li><a href="/editorial/gallery.html">Gallery</a></li>
+<li><a href="/editorial/subscription-1.html">Subscription</a></li>
+</ul>
+
+<ul>
+<li><a href="/business/">Insurance</a></li>
+<li><a href="/business/detail.html">Multi-job</a></li>
+<li><a href="/business/article.html">Privacy</a></li>
+</ul>
+
+<ul>
+<li><a href="/campaign/">Charity</a></li>
+<li><a href="/campaign/detail.html">Campaign</a></li>
+<li><a href="/campaign/donate.html">Donate</a></li>
+</ul>
+
+<ul>
+<li><a href="/organisation/">Services</a></li>
+<li><a href="/organisation/legal.html">Legal</a></li>
+<li><a href="/organisation/planner.html">Planner</a></li>
+<li><a href="/organisation/planner-edit.html">Planner (edit)</a></li>
+</ul>
+
+<ul>
+<li><a href="/store/">Store</a></li>
+<li><a href="/store/hero-1.html">Hero 1</a></li>
+<li><a href="/store/hero-2.html">Hero 2</a></li>
+<li><a href="/store/product.html">Product</a></li>
+</ul>
+
+</div><!-- one -->
+
+<div>
+<h3 data-size="l">About Wheelman</h3>
+<p data-size="xs">Andy Clarke&#8217;s Wheelman is a set of examples which aim to demonstrate how to make original designs and add brand personality to common page types using various design techniques.</p>
+</div><!-- two -->
+
+<div>
+<small>&#169; Andy Clarke 2023&#8211;now. All Rights Reserved.</small>
+</div><!-- three -->
+
+</footer>
+
+
+
+
+
+<!-- @import "/partials/_dialog" -->
+
+<script>
+let toggler = document.querySelectorAll("[data-toggle]");
+let closers = document.querySelectorAll("[data-close]");
+
+if (toggler) {
+toggler.forEach(function (element) {
+let target = element.getAttribute("data-toggle");
+let targets = document.querySelectorAll(target);
+
+element.addEventListener("click", (event) => {
+targets.forEach(function (e) {
+e.showModal();
+});
+});
+});
+
+closers.forEach(function (element) {
+element.addEventListener("click", (event) => {
+let dialog = element.closest("dialog");
+dialog.close();
+});
+});
+}
+</script>

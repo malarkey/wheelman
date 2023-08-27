@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<!-- @import "/partials/_head" -->
+
+<body id="wheelman-world">
+
+<my-breadcrumbs>
+<a href="/">Home</a>
+<a href="index.html">Location</a>
+<a href="legal.html">Legal</a>
+<a href="planner.html">Planner</a>
+<a href="planner-edit.html">Planner (edit)</a>
+</my-breadcrumbs>
+
+
+<main>
+
+<header id="organisation-legal-header">
+<h1 data-size="6xl">Heist planner</h1>
+<p class="alt--accent">An innovative robbery planning app which simplifies coordinating your heist. Heist Planner redefines robbery planning, ensuring seamless execution for any heist.</p>
+</header>
+
+<my-planner>
+
+<form>
+
+<h2 data-function="divider" id="fragment-1">1) The job <!-- @import "/partials/icon-wheelman" --></h2>
+
+<div class="grid--cols-2">
+
+<div class="grid-span-all">
+<label for="planner-1-title">Job title</label>
+<input type="text" id="planner-1-title" value="Hatton Garden safe deposit burglary">
+</div><!-- grid-span-all -->
+
+<div>
+<label for="planner-1-date">Date</label>
+<input type="date" id="planner-1-date" value="2023-11-20" min="2023-11-20" max="2033-11-20">
+</div>
+
+<div>
+<label for="planner-1-time">Time</label>
+<input type="text" id="planner-1-time" value="23:00">
+</div>
+
+<div class="grid-span-all">
+<label for="planner-1-plan">Plan</label>
+<textarea id="planner-1-plan">Working through the four-day weekend of the Easter Bank Holiday to tunnel into the Hatton Garden Safe Deposit Ltd. from an adjacent property.</textarea>
+<p>You have <b>65</b> characters remaining</p>
+</div><!-- grid-span-all -->
+
+</div><!-- grid -->
+
+
+
+
+<h2 data-function="divider" id="fragment-2">2) The firm <!-- @import "/partials/icon-wheelman" --></h2>
+
+<div class="grid--cols-2">
+
+<div class="grid-span-all">
+<label for="planner-2-name">Name</label>
+<input type="text" id="planner-2-name" value="Brian Reader">
+</div><!-- grid-span-all -->
+
+<div>
+<label for="planner-2-nickname">Nickname</label>
+<input type="text" id="planner-2-nickname" value="The Old Man">
+</div>
+
+<div>
+<label for="planner-2-role">Role</label>
+<input type="text" id="planner-2-role" value="Planning">
+</div>
+
+<div class="grid-span-all">
+
+<my-upload>
+
+<div>
+<!-- @import "/partials/icon-upload" -->
+</div><!-- one -->
+
+<div>
+<h3>Upload avatar</h3>
+<button class="btn" data-style="base">Choose a file</button>
+</div><!-- two -->
+
+<div>
+<p data-size="xs">No file selected</p>
+</div><!-- three -->
+
+</my-upload>
+
+</div><!-- grid-span-all -->
+
+<div class="grid-span-all" data-align="right">
+<button class="btn" data-style="alt">Add another</button>
+</div><!-- grid-span-all -->
+
+</div><!-- grid -->
+
+
+
+
+<h2 data-function="divider" id="fragment-3">3) The target <!-- @import "/partials/icon-wheelman" --></h2>
+
+<div class="grid--cols-2">
+
+<div class="grid-span-all">
+<label for="planner-3-name">Name</label>
+<input type="text" id="planner-3-name">
+</div><!-- grid-span-all -->
+
+<div class="grid-span-all">
+
+<div id="planner-3-types">
+
+<div>
+<input type="radio" name="target-type" id="target-type-1" value="Bank job">
+<label for="target-type-1">
+<!-- @import "/partials/_icon-target-type-1" -->
+Bank job</label>
+</div><!-- one -->
+
+<div>
+<input type="radio" name="target-type" id="target-type-2" value="Cash grab">
+<label for="target-type-2">
+<!-- @import "/partials/_icon-target-type-2" -->
+Cash grab</label>
+</div><!-- two -->
+
+<div>
+<input type="radio" name="target-type" id="target-type-3" value="Jewellery heist">
+<label for="target-type-3">
+<!-- @import "/partials/_icon-target-type-3" -->
+Jewellery heist</label>
+</div><!-- three -->
+
+<div>
+<input type="radio" name="target-type" id="target-type-4" value="Safety Deposits theft" checked>
+<label for="target-type-4">
+<!-- @import "/partials/_icon-target-type-4" -->
+Safety Deposits theft</label>
+</div><!-- four -->
+
+<div>
+<input type="radio" name="target-type" id="target-type-5" value="Security van snatch">
+<label for="target-type-5">
+<!-- @import "/partials/_icon-target-type-5" -->
+Security van snatch</label>
+</div><!-- five -->
+
+<div>
+<input type="radio" name="target-type" id="target-type-6" value="Train robbery">
+<label for="target-type-6">
+<!-- @import "/partials/_icon-target-type-6" -->
+Train robbery</label>
+</div><!-- six -->
+
+</div><!-- planner-3-types -->
+
+</div>
+
+<div class="grid-span-all">
+<label for="planner-3-address-1">Address line 1</label>
+<input type="text" id="planner-3-address-1" value="88, 90 Hatton Garden">
+</div><!-- grid-span-all -->
+
+<div class="grid-span-all">
+<label for="planner-2-address-2">Address line 2 (optional)</label>
+<input type="text" id="planner-3-address-2">
+</div><!-- grid-span-all -->
+
+<div>
+<label for="planner-3-address-3">Town or city</label>
+<input type="text" id="planner-3-address-3" value="London">
+</div>
+
+<div>
+<label for="planner-3-address-4">County (optional)</label>
+<input type="text" id="planner-3-address-4">
+</div>
+
+<div>
+<label for="planner-3-address-5">Postcode</label>
+<input type="text" id="planner-3-address-5" value="EC1N 8PN">
+</div>
+
+</div><!-- grid -->
+
+
+
+
+<h2 data-function="divider" id="fragment-4">4) The loot <!-- @import "/partials/icon-wheelman" --></h2>
+
+<div class="grid--cols-2">
+
+<div>
+<label for="planner-4-type">Loot type</label>
+<input type="text" id="planner-4-type" value="Safety deposit boxes">
+</div>
+
+<div>
+<label for="planner-4-value">Value (approx)</label>
+<input type="text" id="planner-4-value" value="14,000,000">
+</div>
+
+</div><!-- grid -->
+
+<h3>Splits</h3>
+
+<div class="grid--cols-2">
+
+<div>
+<label for="planner-4-name">Name</label>
+<input type="text" id="planner-4-name" value="Brian Reader">
+</div>
+
+<div>
+<label for="planner-4-percentage">Percentage split</label>
+<input type="text" id="planner-4-percentage" value="50%">
+</div>
+
+</div><!-- grid -->
+
+
+
+
+<h2 data-function="divider" id="fragment-5">5) The safe house <!-- @import "/partials/icon-wheelman" --></h2>
+
+<div class="grid--cols-2">
+
+<div class="grid-span-all">
+<label for="planner-5-address-1">Address line 1</label>
+<input type="text" id="planner-5-address-1" value="8–10 Broadway">
+</div><!-- grid-span-all -->
+
+<div class="grid-span-all">
+<label for="planner-5-address-2">Address line 2 (optional)</label>
+<input type="text" id="planner-5-address-2">
+</div><!-- grid-span-all -->
+
+<div>
+<label for="planner-5-address-3">Town or city</label>
+<input type="text" id="planner-5-address-3" value="London">
+</div>
+
+<div>
+<label for="planner-5-address-4">County (optional)</label>
+<input type="text" id="planner-5-address-4">
+</div>
+
+<div>
+<label for="planner-5-address-5">Postcode</label>
+<input type="text" id="planner-5-address-5" value="SW1A 2JL">
+</div>
+
+</div><!-- grid -->
+
+
+
+
+<h2 data-function="divider" id="fragment-6">6) The tools <!-- @import "/partials/icon-wheelman" --></h2>
+
+<div class="grid--cols-2">
+
+<div class="grid-span-all">
+<label for="planner-6-tool-1">Name</label>
+<input type="text" id="planner-6-tool-1" value="Drill (large)">
+</div><!-- grid-span-all -->
+
+<div class="grid-span-all">
+<label for="planner-6-tool-2">Name</label>
+<input type="text" id="planner-6-tool-2" value="Jack hammer">
+</div><!-- grid-span-all -->
+
+<div class="grid-span-all">
+<label for="planner-6-tool-3">Name</label>
+<input type="text" id="planner-6-tool-3" value="Wire cutters">
+</div><!-- grid-span-all -->
+
+<div class="grid-span-all" data-align="right">
+<button class="btn" data-style="alt">Add another</button>
+</div><!-- grid-span-all -->
+
+</div><!-- grid -->
+
+
+
+<h2 data-function="divider" id="fragment-7">7) The fence <!-- @import "/partials/icon-wheelman" --></h2>
+
+<div class="grid--cols-2">
+
+<div>
+<label for="planner-7-name">Name</label>
+<input type="text" id="planner-7-name" value="Billy “The Fish” Lincoln">
+</div><!-- one -->
+
+<div>
+<label for="planner-7-telephone">Telephone</label>
+<input type="tel" id="planner-7-telephone" value="07515 395 903">
+</div><!-- two -->
+
+<div>
+<label for="planner-7-email">Email</label>
+<input type="email" id="planner-7-email" value="fence@wheelman.world">
+</div><!-- three -->
+
+<div>
+<label for="planner-7-percentage">Percentage commission</label>
+<input type="text" id="planner-7-percentage" value="5%">
+</div><!-- four -->
+
+</div><!-- grid -->
+
+
+
+
+
+<h2 data-function="divider" id="fragment-8">8) The timeline <!-- @import "/partials/icon-wheelman" --></h2>
+
+<div class="grid--cols-2">
+
+<div>
+<label for="planner-8-time-1">Event</label>
+<input type="text" id="planner-8-time-1" value="Staff lock doors">
+</div>
+
+<div>
+<label for="planner-8-event-1">Time</label>
+<input type="text" id="planner-8-event-1" value="21:00">
+</div>
+
+<div>
+<label for="planner-8-time-2">Event</label>
+<input type="text" id="planner-8-time-2" value="Descend to vault">
+</div>
+
+<div>
+<label for="planner-8-event-2">Time</label>
+<input type="text" id="planner-8-event-2" value="21:05">
+</div>
+
+<div>
+<label for="planner-8-time-3">Event</label>
+<input type="text" id="planner-8-time-3" value="Start the drilling">
+</div>
+
+<div>
+<label for="planner-8-event-3">Time</label>
+<input type="text" id="planner-8-event-3" value="21:15">
+</div>
+
+<div class="grid-span-all" data-align="right">
+<button class="btn" data-style="alt">Add another</button>
+</div><!-- grid-span-all -->
+
+</div><!-- grid -->
+
+</form>
+
+</my-planner>
+
+</main>
+
+<!-- @import "/partials/_footer" -->
+
+</body>
+</html>
