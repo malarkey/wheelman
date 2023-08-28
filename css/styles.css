@@ -1276,17 +1276,6 @@ main .newsletter {
 margin-right: 0;
 margin-left: 0; }
 
-.newsletter a {
-display: block;
-cursor: pointer; }
-
-@media (min-width: 64em) {
-
-.newsletter a {
-margin: 0 auto;
-max-width: 50%; }
-}
-
 /* numeral */
 
 .numeral {
@@ -3043,7 +3032,7 @@ background-color: #040405; }
 #editorial-subscription-promo a {
 display: block;
 margin: 0 auto;
-max-width: 50%; }
+max-width: 50vw; }
 
 
 
@@ -3120,3 +3109,18 @@ text-align: center; }
 font-family: var(--font-family-default);
 font-size: var(--font-size-s);
 color: #d5dadd; }
+
+[data-toggle="dialog"] {
+display: block;
+margin: 0 auto;
+padding: 0;
+width: 100%;
+width: 50vw;
+background-color: transparent;
+border-width: 0;
+text-align: center;
+text-decoration: none;
+text-indent: 0;
+-webkit-appearance: none;
+appearance: none;
+cursor: pointer; }
