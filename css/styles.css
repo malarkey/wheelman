@@ -866,7 +866,7 @@ padding-bottom: 0; }
 grid-column: 1 / 7; }
 
 [role="contentinfo"] > :nth-child(2) {
-grid-column: 7 / 10; }
+grid-column: 7 / 11; }
 
 [role="contentinfo"] > :nth-child(3) {
 grid-column: 1 / -1; }
