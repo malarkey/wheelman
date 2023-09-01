@@ -1131,6 +1131,14 @@
       "oAP" : "\/partials\/_head.html",
       "oF" : 0
     },
+    "\/partials\/_navigation.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/partials\/_navigation.html",
+      "oF" : 0
+    },
     "\/partials\/_social.kit" : {
       "cB" : 0,
       "ft" : 2048,
@@ -2232,6 +2240,16 @@
       "miP" : 0,
       "oA" : 1,
       "oAP" : "\/partials\/logo-axa.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/partials\/logo-banner.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 1,
+      "oAP" : "\/partials\/logo-banner.svg",
       "oF" : 0,
       "opt" : 0,
       "plM" : 52780316221407,

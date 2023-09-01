@@ -772,7 +772,7 @@ my-breadcrumbs {
 display: flex;
 gap: 5px;
 justify-content: center;
-margin: var(--spacing-r) 0; }
+margin: 0 0 var(--spacing-r) 0; }
 
 my-breadcrumbs a,
 my-breadcrumbs a:visited {
@@ -807,6 +807,52 @@ color: inherit; }
 display: block;
 margin: var(--spacing-r) auto;
 max-width: 500px; }
+
+/* navigation */
+
+#banner-navigation {
+display: flex;
+flex-direction: column;
+gap: var(--spacing-s);
+align-items: center;
+justify-content: space-between;
+margin-trim: block-end;
+padding: var(--spacing-r) var(--spacing-m); }
+
+#banner-navigation div a {
+display: inline-block;
+margin-right: var(--spacing-m);
+font-family: var(--font-family-headline-r);
+font-size: var(--font-size-m);
+line-height: var(--lineheight-s);
+text-decoration: none;
+text-transform: uppercase;
+transform: skewX(0);
+transition: all var(--animate-duration-faster) var(--animate-function);
+color: var(--color-text); }
+
+#banner-navigation div a:hover {
+transform: skewX(-15deg); }
+
+#banner-navigation svg {
+transform: skewX(0);
+transition: all var(--animate-duration-faster) var(--animate-function); }
+
+#banner-navigation svg:hover {
+transform-origin: 0 50%;
+transform: skewX(-15deg); }
+
+#banner-navigation #banner-logomark {
+fill: var(--color-accent); }
+
+#banner-navigation #banner-logotype {
+fill: var(--color-text); }
+
+@media (min-width: 64em) {
+
+#banner-navigation {
+flex-direction: row; }
+}
 
 /* footer */
 
@@ -3060,7 +3106,12 @@ font-family: var(--font-family-headline-r);
 font-size: var(--font-size-m);
 color: var(--color-text-alt);
 text-decoration: none;
-text-transform: uppercase; }
+text-transform: uppercase;
+transform: skewX(0);
+transition: all var(--animate-duration-faster) var(--animate-function); }
+
+#navigation-index a:hover {
+transform: skewX(-15deg); }
 
 #navigation-index a:not(:last-child) {
 margin-right: var(--spacing-s); }
@@ -3102,20 +3153,20 @@ transition: all var(--animate-duration-faster) var(--animate-function); }
 transform: rotate(-2deg); }
 
 #editorial-latest-index article:nth-of-type(2) {
-transform: rotate(2deg); }
+transform: translateX(-10px) rotate(2deg); }
 
 #editorial-latest-index article:nth-of-type(3) {
 transform: rotate(-2deg); }
 
 #editorial-latest-index article:nth-of-type(4) {
-transform: rotate(2deg); }
+transform: translateX(-10px) rotate(2deg); }
 
 #editorial-index article:hover {
 transform: rotate(0); }
 
 #editorial-index article a {
 display: block;
-padding: var(--spacing-s) var(--spacing-s) 0;
+padding: var(--spacing-s) var(--spacing-m) 0 var(--spacing-s);
 background-color: var(--color-text-alt);
 color: var(--color-text);
 font-family: var(--font-family-headline-m);
