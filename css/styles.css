@@ -3083,9 +3083,6 @@ border-right: var(--border-width-r) solid var(--color-border); }
 margin: 0 var(--spacing-s);
 padding: var(--spacing-m) var(--spacing-m) 0;
 background-color: var(--color-text);
-background-image: url(/img/bg-noise.svg),linear-gradient(180deg,#0c0805,#243b4a);
-background-repeat: repeat,repeat-x;
-background-size: 200px 200px,100vw 150px;
 color: var(--color-text-alt); }
 
 @media (min-width: 64em) {
