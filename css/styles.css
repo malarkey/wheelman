@@ -821,7 +821,7 @@ padding: var(--spacing-r) var(--spacing-m); }
 
 #banner-navigation div a {
 display: inline-block;
-margin-right: var(--spacing-m);
+margin-right: var(--spacing-r);
 font-family: var(--font-family-headline-r);
 font-size: var(--font-size-m);
 line-height: var(--lineheight-s);
@@ -3083,6 +3083,9 @@ border-right: var(--border-width-r) solid var(--color-border); }
 margin: 0 var(--spacing-s);
 padding: var(--spacing-m) var(--spacing-m) 0;
 background-color: var(--color-text);
+background-image: url(/img/bg-noise.svg),linear-gradient(180deg,#0c0805,#243b4a);
+background-repeat: repeat,repeat-x;
+background-size: 200px 200px,100vw 150px;
 color: var(--color-text-alt); }
 
 @media (min-width: 64em) {
@@ -3129,6 +3132,9 @@ text-align: right; }
 margin: 0 var(--spacing-s);
 padding: var(--spacing-m);
 background-color: var(--color-text);
+background-image: url(/img/bg-noise.svg);
+background-repeat: repeat;
+background-size: 200px 200px;
 color: var(--color-text-alt); }
 
 @media (min-width: 64em) {
@@ -3147,6 +3153,7 @@ margin-bottom: var(--spacing-r); }
 
 #editorial-index article {
 margin-bottom: var(--spacing-s);
+filter: drop-shadow(0 1px 1px rgba(0,0,0,.5));
 transition: all var(--animate-duration-faster) var(--animate-function); }
 
 #editorial-latest-index article:nth-of-type(1) {
@@ -3162,7 +3169,8 @@ transform: rotate(-2deg); }
 transform: translateX(-10px) rotate(2deg); }
 
 #editorial-index article:hover {
-transform: rotate(0); }
+transform: rotate(0);
+filter: drop-shadow(0 5px 5px rgba(0,0,0,.75)); }
 
 #editorial-index article a {
 display: block;
@@ -3185,9 +3193,11 @@ width: 100%;
 border: var(--border-width-l) solid var(--color-text-alt);
 object-fit: cover;
 transform: rotate(0);
-transition: all var(--animate-duration-faster) var(--animate-function); }
+transition: all var(--animate-duration-faster) var(--animate-function);
+filter: drop-shadow(0 1px 1px rgba(0,0,0,.5)); }
 
 #editorial-latest-index img:hover {
+filter: drop-shadow(0 5px 5px rgba(0,0,0,.75));
 transform: rotate(2deg); }
 
 #editorial-latest-index svg {
