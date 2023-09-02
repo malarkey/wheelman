@@ -3080,7 +3080,7 @@ border-right: var(--border-width-r) solid var(--color-border); }
 /* header-index */
 
 #header-index {
-margin: 0 var(--spacing-s);
+margin: var(--spacing-s) var(--spacing-s) 0;
 padding: var(--spacing-m) var(--spacing-m) 0;
 background-color: var(--color-text);
 color: var(--color-text-alt); }
