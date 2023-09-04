@@ -1074,10 +1074,11 @@ opacity: 0; }
 display: none; }
 
 [data-options="1"] > div .cta--numeral {
-font-family: var(--font-family-headline-m);
+font-family: var(--font-family-headline-r);
 font-size: var(--font-size-m); }
 
 [data-options="1"] > div .cta--numeral span {
+font-family: var(--font-family-headline-m);
 font-size: var(--font-size-3xl); }
 
 [data-options="1"] > div p {
@@ -1246,10 +1247,11 @@ left: var(--spacing-s);
 opacity: 0; }
 
 [data-options="3"] .cta--numeral {
-font-family: var(--font-family-headline-m);
+font-family: var(--font-family-headline-r);
 font-size: var(--font-size-m); }
 
 [data-options="3"] .cta--numeral span {
+font-family: var(--font-family-headline-m);
 font-size: var(--font-size-3xl); }
 
 [data-options="3"] input[type=radio]:checked ~ label {
@@ -1397,10 +1399,11 @@ margin-left: 0; }
 /* numeral */
 
 .numeral {
-font-family: var(--font-family-headline-m);
+font-family: var(--font-family-headline-r);
 font-size: var(--font-size-m); }
 
 .numeral span {
+font-family: var(--font-family-headline-m);
 font-size: var(--font-size-3xl); }
 
 /* pills */

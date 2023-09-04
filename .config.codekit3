@@ -126,22 +126,6 @@
       "oAP" : "\/campaign\/index.html",
       "oF" : 0
     },
-    "\/comparison\/detail.html" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/comparison\/detail.html",
-      "oF" : 0
-    },
-    "\/comparison\/detail.kit" : {
-      "cB" : 0,
-      "ft" : 2048,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/comparison\/detail.html",
-      "oF" : 0
-    },
     "\/comparison\/index.html" : {
       "cB" : 0,
       "ft" : 8192,
@@ -156,6 +140,22 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/comparison\/index.html",
+      "oF" : 0
+    },
+    "\/comparison\/review.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/comparison\/review.html",
+      "oF" : 0
+    },
+    "\/comparison\/review.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/comparison\/review.html",
       "oF" : 0
     },
     "\/css\/styles.css" : {
