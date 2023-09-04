@@ -886,7 +886,7 @@ padding: var(--spacing-r) var(--spacing-m); }
 
 #banner-navigation div a {
 display: inline-block;
-margin-right: var(--spacing-r);
+margin-right: var(--spacing-s);
 font-family: var(--font-family-headline-r);
 font-size: var(--font-size-m);
 line-height: var(--lineheight-s);
