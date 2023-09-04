@@ -769,8 +769,11 @@ min-width: 20vw;  }
 
 /* comparison-performance */
 
+@media (min-width: 64em) {
+
 [data-content*="comparison-performance"] tbody th {
 width: 140px; }
+}
 
 [data-content*="comparison-performance"] .numeral {
 width: 90px;
@@ -787,7 +790,14 @@ text-align: center; }
 
 [data-content="comparison-performance-1"] thead svg {
 display: block;
-margin: 0 auto var(--spacing-s); }
+margin: 0 auto var(--spacing-s);
+width: 32px; }
+
+@media (min-width: 64em) {
+
+[data-content="comparison-performance-1"] thead svg {
+width: 68px; }
+}
 
 [data-content="comparison-performance-1"] tbody tr th,
 [data-content="comparison-performance-1"] tbody tr td {
@@ -799,7 +809,13 @@ border-bottom: var(--border-width-r) solid var(--color-border); }
 
 [data-content*="comparison-performance"] tbody svg {
 display: block;
+width: 30vw; }
+
+@media (min-width: 64em) {
+
+[data-content*="comparison-performance"] tbody svg {
 width: 50vw; }
+}
 
 /* details */
 
