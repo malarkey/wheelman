@@ -126,6 +126,38 @@
       "oAP" : "\/campaign\/index.html",
       "oF" : 0
     },
+    "\/comparison\/detail.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/comparison\/detail.html",
+      "oF" : 0
+    },
+    "\/comparison\/detail.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/comparison\/detail.html",
+      "oF" : 0
+    },
+    "\/comparison\/index.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/comparison\/index.html",
+      "oF" : 0
+    },
+    "\/comparison\/index.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/comparison\/index.html",
+      "oF" : 0
+    },
     "\/css\/styles.css" : {
       "aP" : 0,
       "bl" : 0,
@@ -451,6 +483,50 @@
       "oF" : 0,
       "oIPL" : 1,
       "opt" : 1,
+      "ou" : "lpckwebp-default",
+      "rq" : 75
+    },
+    "\/img\/img-comparison-car-1.webp" : {
+      "ft" : 8388608,
+      "iS" : 17088,
+      "oA" : 0,
+      "oAP" : "\/img\/img-comparison-car-1.webp",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-default",
+      "rq" : 75
+    },
+    "\/img\/img-comparison-car-2.webp" : {
+      "ft" : 8388608,
+      "iS" : 18386,
+      "oA" : 0,
+      "oAP" : "\/img\/img-comparison-car-2.webp",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-default",
+      "rq" : 75
+    },
+    "\/img\/img-comparison-car-3.webp" : {
+      "ft" : 8388608,
+      "iS" : 16242,
+      "oA" : 0,
+      "oAP" : "\/img\/img-comparison-car-3.webp",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-default",
+      "rq" : 75
+    },
+    "\/img\/img-comparison-car-4.webp" : {
+      "ft" : 8388608,
+      "iS" : 217826,
+      "oA" : 0,
+      "oAP" : "\/img\/img-comparison-car-4.webp",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
       "ou" : "lpckwebp-default",
       "rq" : 75
     },
@@ -1385,6 +1461,96 @@
       "plM" : 52780316221407,
       "prP" : 0
     },
+    "\/partials\/icon-circle-cross.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 1,
+      "oAP" : "\/partials\/icon-circle-cross.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/partials\/icon-circle-tick.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 1,
+      "oAP" : "\/partials\/icon-circle-tick.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/partials\/icon-comparison-edit.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 1,
+      "oAP" : "\/partials\/icon-comparison-edit.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/partials\/icon-comparison-rating-1.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 1,
+      "oAP" : "\/partials\/icon-comparison-rating-1.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/partials\/icon-comparison-rating-2.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 1,
+      "oAP" : "\/partials\/icon-comparison-rating-2.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/partials\/icon-comparison-rating-3.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 1,
+      "oAP" : "\/partials\/icon-comparison-rating-3.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/partials\/icon-comparison-table-1.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 1,
+      "oAP" : "\/partials\/icon-comparison-table-1.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/partials\/icon-comparison-table-2.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 1,
+      "oAP" : "\/partials\/icon-comparison-table-2.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/partials\/icon-comparison-table-3.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 1,
+      "oAP" : "\/partials\/icon-comparison-table-3.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
     "\/partials\/icon-edit.svg" : {
       "ft" : 2097152,
       "miP" : 0,
@@ -1770,6 +1936,76 @@
       "miP" : 0,
       "oA" : 1,
       "oAP" : "\/partials\/img-cards-reversed.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/partials\/img-comparison-dimensions.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 1,
+      "oAP" : "\/partials\/img-comparison-dimensions.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/partials\/img-comparison-performance-1.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 1,
+      "oAP" : "\/partials\/img-comparison-performance-1.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/partials\/img-comparison-performance-2.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 1,
+      "oAP" : "\/partials\/img-comparison-performance-2.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/partials\/img-comparison-performance-3.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 1,
+      "oAP" : "\/partials\/img-comparison-performance-3.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/partials\/img-comparison-performance-4.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 1,
+      "oAP" : "\/partials\/img-comparison-performance-4.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/partials\/img-comparison-performance-5.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 1,
+      "oAP" : "\/partials\/img-comparison-performance-5.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/partials\/img-comparison-performance-6.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 1,
+      "oAP" : "\/partials\/img-comparison-performance-6.svg",
       "oF" : 0,
       "opt" : 0,
       "plM" : 52780316221407,
