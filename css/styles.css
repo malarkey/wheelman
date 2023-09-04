@@ -791,13 +791,7 @@ text-align: center; }
 [data-content="comparison-performance-1"] thead svg {
 display: block;
 margin: 0 auto var(--spacing-s);
-width: 32px; }
-
-@media (min-width: 64em) {
-
-[data-content="comparison-performance-1"] thead svg {
 width: 68px; }
-}
 
 [data-content="comparison-performance-1"] tbody tr th,
 [data-content="comparison-performance-1"] tbody tr td {
@@ -809,13 +803,7 @@ border-bottom: var(--border-width-r) solid var(--color-border); }
 
 [data-content*="comparison-performance"] tbody svg {
 display: block;
-width: 30vw; }
-
-@media (min-width: 64em) {
-
-[data-content*="comparison-performance"] tbody svg {
 width: 50vw; }
-}
 
 /* details */
 
@@ -2778,12 +2766,22 @@ font-size: 20cqmin; }
 #comparison-header h1 span {
 color: var(--color-accent); }
 
+#comparison-detail-header h1 {
+margin: 0; }
+
 @media (min-width: 64em) {
 
 #comparison-detail-header {
 display: grid;
-grid-template-columns: 1fr 1fr;
+grid-template-columns: var(--grid-cols-12);
+gap: 0 var(--grid-column-gap);
 align-items: center; }
+
+#comparison-detail-header > :nth-child(1) {
+grid-column: 1 / 7; }
+
+#comparison-detail-header > :nth-child(2) {
+grid-column: 7 / -1; }
 }
 
 /* comparison-specs */
@@ -2840,6 +2838,41 @@ display: flex;
 gap: var(--spacing-l);
 justify-content: center;
 margin-bottom: var(--spacing-l); }
+
+/* comparison-detail-review */
+
+@media (min-width: 64em) {
+
+#comparison-detail-review {
+display: grid;
+grid-template-columns: var(--grid-cols-12);
+gap: 0 var(--grid-column-gap); }
+
+#comparison-detail-review > :nth-child(1) {
+grid-column: 1; }
+
+#comparison-detail-review > :nth-child(2) {
+grid-column: 2 / 7; }
+
+#comparison-detail-review > :nth-child(3) {
+grid-column: 8 / -1; }
+}
+
+/* comparison-detail-details */
+
+@media (min-width: 64em) {
+
+#comparison-detail-details {
+display: grid;
+grid-template-columns: var(--grid-cols-12);
+gap: 0 var(--grid-column-gap); }
+
+#comparison-detail-details > :nth-child(1) {
+grid-column: 2 / 7; }
+
+#comparison-detail-details > :nth-child(2) {
+grid-column: 8 / -1; }
+}
 
 
 
