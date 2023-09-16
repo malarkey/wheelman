@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<!-- @import "/partials/_head" -->
+
+<body id="wheelman-world">
+
+<style>
+:root {
+--color-accent: #e3a330;
+--color-background: #212233;
+--color-base: #212233;
+--color-border: #e3a330;
+--color-text: #c6c3e6; }
+
+h1, h2, h3, h4 {
+color: #fff; }
+
+.alt--endmark:after {
+background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PGcgZmlsbD0iI0UzQTMzMCIgZmlsbC1ydWxlPSJldmVub2RkIj48cGF0aCBkPSJNMTQgMTJjMCAxLjEwMi0uODk3IDItMiAycy0yLS44OTgtMi0yYzAtMS4xMDIuODk3LTIgMi0yczIgLjg5OCAyIDJNNS44MzYgOC42ODdBNi45NTQgNi45NTQgMCAwIDAgNSAxMmMwIC4zNzcuMDM4Ljc0NC4wOTYgMS4xMDVhNi4wMDMgNi4wMDMgMCAwIDEgNC44ODkgNS41OTYgNi45NTIgNi45NTIgMCAwIDAgNC4wMyAwIDYuMDAzIDYuMDAzIDAgMCAxIDQuODg5LTUuNTk2Yy4wNTgtLjM2MS4wOTYtLjcyOC4wOTYtMS4xMDVhNi45NTQgNi45NTQgMCAwIDAtLjgzNi0zLjMxMyAyOC40MzYgMjguNDM2IDAgMCAwLTEyLjMyOCAwIi8+PHBhdGggZD0iTTEyIDIwYy00LjQxMSAwLTgtMy41ODktOC04czMuNTg5LTggOC04IDggMy41ODkgOCA4LTMuNTg5IDgtOCA4bTAtMjBDNS4zODMgMCAwIDUuMzgzIDAgMTJzNS4zODMgMTIgMTIgMTIgMTItNS4zODMgMTItMTJTMTguNjE3IDAgMTIgMCIvPjwvZz48L3N2Zz4="); }
+
+blockquote:before {
+background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA0MSI+PHBhdGggZmlsbD0iI0UzQTMzMCIgZD0ibTAgNDEgNy4zNjQtMjAuMDY0TDIyLjYyIDBoMTMuNTAyTDIxLjA0IDIxLjQ2aDcuMTlMMjEuMDQgNDFIMFptMjcuODggMCA3LjM2NC0yMC4wNjRMNTAuNDk5IDBINjRMNDguOTIgMjEuNDZoNy4xOUw0OC45MiA0MUgyNy44OFoiLz48L3N2Zz4="); }
+
+[data-content="timeline"] {
+margin-bottom: var(--spacing-l); }
+
+[data-content="timeline"] li {
+flex: 1 0 120px;
+height: 200px; }
+
+[data-content="timeline"] li span {
+width: 83px;
+height: 110px;
+background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA4MyAxMTAiPjxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+PHBhdGggZmlsbD0iI0UzQTMzMCIgZmlsbC1ydWxlPSJub256ZXJvIiBkPSJtMTMuOTIgNjMgMTAuNTEuMDEzYzcuNzcuMDE0IDEwLjY4Mi4wNjcgMTEuMTk0LjE4NyAyLjExMy41MTkgNC4xNzMgMi4xNDIgNS4xMTggNC4wMTguMTg0LjM3My43NjEgMi4xNTYgMS4yODYgMy45OTNhNzY0LjM2NCA3NjQuMzY0IDAgMCAwIDIuMjA0IDcuNDM5Yy42ODMgMi4yNzUgMS4yNDcgNC4yMDUgMS4yNDcgNC4yOTggMCAuMTA2LjA1My4xNzMuMTA1LjE3My4zMjgtLjA0Ljk5Ny0xLjI1MSAxLjk0Mi0zLjUxMyAyLjI5Ny01LjQ1NiA0LjA0Mi05LjE5NiA0LjQzNi05LjQ3NS4yMS0uMTYgMi4zODgtMS4wNTEgNC44NDItMi4wMSA4LjY4MS0zLjM3IDEwLjE0My0zLjk0MyAxMC41ODItMy45NjFoLjAzNWMuMDM0IDAgLjA2LjAwNi4wODYuMDEzbC4wMzYuMDEyYS45Ni45NiAwIDAgMSAuMDIzLjAwOWwuMDI1LjAxLjAxMi4wMDVjLjE4NC4wNjcgMS4zMjYgMS4wOTEgMi41NDYgMi4yNzYgMS40NTcgMS40MSAyLjMxIDIuMTQyIDIuNTA3IDIuMTQyLjE3LjAxMy43MjEtLjA2NiAxLjIwNy0uMTQ2IDEuNzg0LS4zMiAzLjI1NC4xODYgNC42MTkgMS41NyAxLjg1IDEuODYzIDIuMTc4IDMuOTc5IDEuMDIzIDYuNTA3LS4yODguNjQtLjQwNiAxLjAzOC0uMzE0IDEuMDkyLjkwNS41OTggMy43NTMgMi45IDMuODA1IDMuMDc0LjAyNi4xMzMtLjA3OS44NjUtLjI1IDEuNjM2LS4xNy43NTktLjQ3MiAyLjIxLS42ODIgMy4yMDctLjIxLjk5OS0uNDk4IDIuMDM2LS42NDMgMi4yOS0uNDMzLjc3MS03LjgyIDcuOTMtOC40NSA4LjE4My0uNjMuMjUzLTcuMTUyLjAyNy03LjU4NS0uMjUyLS4zMTUtLjIxMy0uNDYtLjkwNS0uNTEyLTIuMzU2LS4wMTMtLjYzOS4wNzktLjc1OCAxLjYxNC0xLjk1Ni42ODItLjUzMiAxLjMxMi0xLjExOCAxLjQwNC0xLjI5LjE0NC0uMjU0LjEzMS0xLjQ2NS0uMDQtNS43MjMtLjA4Ny0yLjIwMi0uMTQ2LTQuMjI4LS4xNDktNS4yNHYtLjI0MmMuMDAzLS4yMTYuMDA4LS4zNi4wMTktLjQxMy4wNTItLjI4LjIzNi0uNjUyLjQyLS44MjVsLjMxNC0uMzMzLTEuMzc3LTEuNTQ0Yy0uOTMyLTEuMDUxLTEuNDctMS41NDMtMS42NjctMS41NDMtLjQzMyAwLTYuODYzIDIuNTAxLTcuMTUyIDIuNzY4LS4xMDkuMTEtMS4xNiAyLjM5NS0yLjIwMyA0LjczbC0uMjYuNTg0Yy0uOTkzIDIuMjMzLTEuOTA2IDQuMzQ5LTEuOTA2IDQuNDgtLjAxNC4wNjYuMTcuMTczLjM5My4yMjYuOC4xNzMuODI3LjI1My44NjYgMy45MTNsLjA0IDMuMzUzLjQ1OS42NjVjMi43OTUgNC4wODYgMi4yODMgOS41MTUtMS4yMiAxMy4wODItMS4xODEgMS4yMS0yLjMzNiAxLjk1Ni0zLjkyNCAyLjUwMWwtMS4xMDIuMzczSDguMzQzbC0xLjA5LS4zMmMtMS43OTctLjUxOC0yLjg4Ni0xLjE4NC00LjIxMi0yLjUyOC0zLjQ3Ny0zLjU0LTQuMDI4LTguNjc2LTEuMzY0LTEyLjgyOGwuNjAzLS45MzIuMDY2LTExLjE5MS4wNzgtMTEuMTc5IDEuODktLjA0IDEuODktLjA0VjY2Ljc4aDMuNDV2NS4xNjRoNC4yNjZWNjNabTI1LjkxNiAzMC42MzdoLTIuOTljLTIuMzMyLjAwMS01LjA5OC4wMDYtOC4zODcuMDFsLTE5Ljg0LjAyNy0uOTk4LjM3MmMtMi45NCAxLjA5Mi00Ljc1IDMuNzEzLTQuNzY0IDYuODk0LS4wMTMgMy4zMjYgMi4yNDQgNi4yNjcgNS40MiA3LjA4LjQ5OS4xMjYgMi44NjQuMTY5IDExLjkwOC4xODFoLjcyOGwxLjE0NS4wMDIgMS4yMS4wMDFoLjQybDEuNzQ5LjAwMWgyMy4xMzlsMS4wMS0uMzMyYzQuMjY1LTEuNDEgNi4yNi02LjA2OCA0LjM1Ny0xMC4xNTQtLjUyNS0xLjEzMS0xLjkxNi0yLjU2OC0zLjA3LTMuMTgtLjExLS4wNTktLjIwNy0uMTEzLS4yOTgtLjE2NGwtLjA5LS4wNS0uMDg4LS4wNDhhNi4zMDUgNi4zMDUgMCAwIDAtLjA0NC0uMDIzbC0uMDg2LS4wNDVjLS45MzctLjQ3LTEuOTk4LS41NjQtMTAuNDMtLjU3MlptLTE1LjQ3IDQuMzg4YzEuMjcyLjYzOSAxLjk4IDEuODIzIDEuOTggMy4zMjcgMCAxLjEzMS0uMzkzIDEuOTgzLTEuMjMzIDIuNzQxLS42MTcuNTQ2LTEuNjQuOTcyLTIuMzc1Ljk3Mi0xLjI4NiAwLTIuODA4LTEuMDExLTMuMzQ2LTIuMjM2LS42MTctMS4zNy0uMTk3LTMuMzI3LjkwNS00LjI3MSAxLjE0Mi0uOTg1IDIuNzY5LTEuMTk4IDQuMDY4LS41MzNabS0xMi4wMjEtLjEwNmMxLjM3OC42MzkgMi4xNjUgMS44NSAyLjE3OCAzLjM4LjAxMyAxLjE0NC0uMzY3IDIuMDEtMS4yNDYgMi43ODEtLjYzLjU1OS0xLjY1NC45ODUtMi4zODkuOTg1LS43MjEgMC0xLjc0NS0uNDI2LTIuMzYyLS45NzItMS45NjgtMS43NDMtMS41NzQtNC44OTcuNzQ4LTYuMDY4Ljg4LS40NTIgMi4yMTgtLjQ5MiAzLjA3MS0uMTA2Wm0yMy44Ny4xMDZjMS4yODYuNjM5IDEuOTU1IDEuNzcgMS45NTUgMy4yNi4wMTMgNC4wMDYtNS4yNjIgNS4xNzctNi45MjkgMS41NDQtLjM1NC0uNzcyLS4zOC0yLjE5Ni0uMDQtMi45NjcuODI4LTEuOTE3IDMuMTYzLTIuNzgyIDUuMDE0LTEuODM3Wm0xMS4zNzctLjIyNmMuOTcuMzA2IDIuMDA3IDEuMzcgMi4yOTYgMi4zODIuODkzIDMuMTI3LTIuMDg2IDUuODAyLTUuMDEzIDQuNDg1LTIuNzgyLTEuMjM4LTIuNzk1LTUuMzYzLS4wMjYtNi42OC43MzUtLjM0NyAxLjk1NS0uNDI3IDIuNzQzLS4xODdaTTMwLjE2OSA2Ni45NDVoLTEuMTk0Yy0uODUzLjAwMS0xLjgyMy4wMDQtMi45My4wMDdsLTguMTg5LjA0LS4wMzkgMy4wODhjLS4wMDUuNDQzLS4wMDguODMtLjAwOSAxLjE2NnYuMzhjLjAwNCAxLjE4Ni4wNDYgMS42MDguMTUzIDEuNjg3LjE1OC4xNDcgMi41NiAxLjA2NSAxOC4wODMgNi45MiAyLjczIDEuMDM4IDQuOTczIDEuODIzIDUgMS43NTdhLjg5Ljg5IDAgMCAwLS4wMzctLjE5N2wtLjA0Mi0uMTY0YTUzLjIxOSA1My4yMTkgMCAwIDAtLjI5NC0xLjA3bC0uMTU1LS41NDZjLS4yMjItLjc3My0uNDk4LTEuNzE1LS43OTgtMi43MmE4MzIuMjggODMyLjI4IDAgMCAxLTEuODc2LTYuMjk1Yy0uNTM4LTEuOTQzLS44MjctMi40NzUtMS42MjctMy4xMjctLjk3Ny0uNzg0LTEuMDUtLjkxOC02LjA0Ni0uOTI2Wm00NC4zMzcgNC45MDRjLS4zNjguMDQtLjgyNy4xODctMS4wMzcuMzMzLTEuMjQ2Ljk0NS0xLjMxMiAyLjM1Ni0uMTcgMy40Ni4zMjguMzIuNTc3LjQxMyAxLjE4LjQ2Ni42NTcuMDUzLjg0LjAxMyAxLjI4Ny0uMjkzIDEuODM3LTEuMjI0LjkwNS00LjEzOS0xLjI2LTMuOTY2WiIvPjxwYXRoIHN0cm9rZT0iIzc3M0UxOSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2Utd2lkdGg9IjIiIGQ9Ik00MiAwdjUwIi8+PC9nPjwvc3ZnPg=="); }
+
+#editorial-article-header h1 {
+margin-top: -80px; }
+
+@media (min-width: 64em) {
+#editorial-article-header {
+display: grid;
+grid-template-columns: var(--grid-cols-12);
+margin: 0; }
+
+#editorial-article-header picture {
+grid-column: 1 / -1;
+grid-row: 1; }
+
+#editorial-article-header h1 {
+grid-column: 8 / 12;
+grid-row: 1;
+margin-top: 0; }
+}
+</style>
+
+<!-- @import "/partials/_navigation" -->
+
+<my-breadcrumbs>
+<a href="index.html">Magazine</a>
+<a href="story-1.html">Story 1</a>
+<a href="story-2.html">Story 2</a>
+<a href="story-3.html">Story 3</a>
+<a href="gallery.html">Gallery</a>
+<a href="subscription-1.html">Subscription</a>
+</my-breadcrumbs>
+
+<main>
+
+<div id="editorial-article">
+
+<header id="editorial-article-header">
+<picture>
+<source srcset="/img/img-editorial-article-3.webp" media="(min-width: 64em)">
+<img src="/img/img-editorial-article-3-sm.webp" alt="">
+</picture>
+
+<h1><span data-visibility="hidden">Is this the dumbest robber ever?</span> <!-- @import "/partials/img-editorial-headline-1.svg" --></h1>
+</header>
+
+<div id="editorial-article-byline">
+<time>November 20 2023</time>
+<!-- @import "/partials/_social" -->
+</div><!-- editorial-article-byline -->
+
+<div id="article-content">
+
+<p><span data-visibility="hidden">Bungling raider knocks down wrong wall, breaks into empty warehouse, then crashes getaway car.</span> <!-- @import "/partials/img-editorial-lede-1.svg" --></p>
+
+<p class="alt--dropcap">An aiming to be one of Britain&#8217;s criminal masterminds, Raymond Betson yesterday sealed his legacy as possibly the most hopeless. The bungling career criminal, jailed for the failed Millennium Dome diamond heist in 2000, was starting another sentence after a raid on a Kent cash depot with a mechanical digger went disastrously wrong.</p>
+
+<p>He and his unknown accomplices dreamed of recreating the record-breaking 2007 Securitas raid in which &#163;53million was spirited away.</p>
+
+<hr data-function="spacer">
+
+<ul data-content="timeline">
+
+<li>
+<b>Digger driven into wall</b>
+<span></span>
+<time>March 2012</time></li>
+
+<li>
+<b>Finding empty room</b>
+<span></span>
+<time>March 2012</time></li>
+
+<li>
+<b>Fleeing <br>empty-handed</b>
+<span></span>
+<time>March 2012</time></li>
+
+<li>
+<b>Police find balaclava</b>
+<span></span>
+<time>March 2012</time></li>
+
+<li>
+<b>Betson <br>arrested</b>
+<span></span>
+<time>April 2012</time></li>
+
+<li>
+<b>Jailed for <br>13 years</b>
+<span></span>
+<time>August 2014</time></li>
+
+</ul>
+
+<aside>
+<img src="/img/img-editorial-article-2.webp" alt="">
+<h3><span data-visibility="hidden">Biggest mail robbery ever</span> <!-- @import "/partials/img-editorial-h3-1-1.svg" --></h3>
+</aside>
+
+<p>But they smashed through the wrong wall&#8212;which led them to an empty room rather than the vault of cash they were expecting. They then broke into a neighbouring warehouse, which was also empty, before crashing the getaway car.</p>
+
+<h2><span data-visibility="hidden">Caught red-handed</span> <!-- @import "/partials/img-editorial-h2-1.svg" --></h2>
+
+<p>Betson, 52, and his accomplices fled on foot, leaving a treasure trove of evidence which would lead police straight to his doorstep. In 2000 he was caught red-handed as he led an audacious heist to steal diamonds worth &#163;350million at the Millennium Dome, making headlines world-wide. He was jailed for 18 years, reduced to 15 because the elderly judge fell asleep during the trial. Before that raid, Betson had 18 convictions.</p>
+
+<blockquote>
+<p><span data-visibility="hidden">They smashed through the wrong wall which led them to an empty room</span> <!-- @import "/partials/img-editorial-blockquote-1.svg" --></p>
+</blockquote>
+
+<p>In the latest case, he and his team used a stolen digger to smash through a wall at the Loomis cash depot in Kent, in March 2012. Armed with baseball bats and carrying plastic bags to stash cash in, the men climbed through the hole only to find the room was empty. They fled after a minute, only to get their four-wheel drive getaway car stuck by grounding it on rough farmland.</p>
+
+<p class="alt--endmark">When police turned up they found a two-way radio a baseball bat, and a stash of large white bags. In a nearby bush, a balaclava, snood head cover, and running stopwatch&#8212;which had been started before the robbery. DNA on the balaclava provided a &#8220;one in a million&#8221; match to Betson. He was convicted at Maidstone Crown court and jailed for 13 years.</p>
+
+</div><!-- article-content -->
+
+</div><!-- editorial-article -->
+
+<div class="grid--flex" data-behaviour="scroll-mobile">
+
+<div>
+<img src="/img/img-editorial-updates-4.webp" alt="">
+<h3><span data-visibility="hidden">One kink in the plan</span> <!-- @import "/partials/img-editorial-h3-2-1.svg" --></h3>
+<p>In May 1990, John Goddard was mugged at knifepoint in the City of London whilst carrying hundreds of bearer bond certificates, most of which were worth &#163;1m each.</p>
+</div><!-- one -->
+
+<div>
+<img src="/img/img-editorial-updates-5.webp" alt="">
+<h3><span data-visibility="hidden">Christ Church Gallery Heist</span> <!-- @import "/partials/img-editorial-h3-3-1.svg" --></h3>
+<p>Burglars broke into the gallery by night and stole three paintings including those from Salvator Rosa, Anthony van Dyck, and Annibale Carracci. The estimated value of the stolen paintings is over &#163;10m.</p>
+</div><!-- two -->
+
+<div>
+<img src="/img/img-editorial-updates-6.webp" alt="">
+<h3><span data-visibility="hidden">Jewellery robbers&#8217; verdicts</span> <!-- @import "/partials/img-editorial-h3-4-1.svg" --></h3>
+<p>Viccei was sentenced to twenty-two years, serving his sentence in Parkhurst Prison on the Isle of Wight.</p>
+</div><!-- three -->
+
+</div><!-- grid -->
+
+</main>
+
+<!-- @import "/partials/_footer" -->
+
+</body>
+</html>
