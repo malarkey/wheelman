@@ -30,14 +30,14 @@
 /* UI colours */
 --color-background: #fff;
 --color-background-selection: rgba(0,0,0,.15);
---color-accent: #ba0d37;
---color-base: #dae0e6;
---color-base-alt: #243a4a;
+--color-accent: #bf0d3e;
+--color-base: #D5DDE8;
+--color-base-alt: #2A3B55;
 --color-base-blue: #e1ebf2;
 --color-base-cream: #f2efed;
 --color-base-purple: #dbddf9;
 --color-base-yellow: #fff8e6;
---color-border: #ba0d37;
+--color-border: #bf0d3e;
 --color-text: #243a4a;
 --color-text-alt: #fff;
 
@@ -93,12 +93,13 @@
 /* Filters */
 --brightness-up: 1.15;
 --brightness-down: .85;
+--saturate-up: 1.25;
+--saturate-down: .85;
 }
 
 [data-theme="reversed"] {
 --color-background: #243a4a;
 --color-background-selection: rgba(0,0,0,.15);
---color-accent: #cc1441;
 --color-base: #192833;
 --color-base-alt: #192833;
 --color-border: #cc1441;
@@ -107,7 +108,6 @@
 [data-theme="dark"] {
 --color-background: #060403;
 --color-background-selection: #000;
---color-accent: #cc1441;
 --color-base: #2e2e30;
 --color-base-alt: #2e2e30;
 --color-border: #cc1441;
@@ -252,12 +252,12 @@ text-decoration-color: var(--color-text-link-hover);
 text-decoration-thickness: .5px;
 text-underline-offset: .15em;
 transform: translateY(0);
-filter: brightness(1);
+filter: saturate(1);
 transition: all var(--animate-duration-fast) var(--animate-function); }
 
 a:hover {
 text-decoration-skip-ink: auto;
-filter: brightness(var(--brightness-up)); }
+filter: saturate(var(--saturate-up)); }
 
 a:active, a:focus-visible {
 color: var(--color-text-link);
@@ -681,14 +681,14 @@ text-transform: uppercase;
 transition: all var(--animate-duration-fast) var(--animate-function);
 color: var(--color-button-text);
 text-align: center;
-filter: brightness(1);
+filter: saturate(1);
 cursor: pointer; }
 
 .btn:hover {
 text-decoration: none;
 background-color: var(--color-accent);
 color: var(--color-button-text);
-filter: brightness(var(--brightness-up)); }
+filter: saturate(var(--saturate-up)); }
 
 .btn:active {
 text-decoration: none;
@@ -701,8 +701,7 @@ background-color: var(--color-base-alt); }
 [data-style="base"],
 [data-style="base"]:hover {
 background-color: var(--color-base);
-color: var(--color-text);
-filter: brightness(1); }
+color: var(--color-text); }
 
 [data-effect="turbo"] {
 box-shadow: 3px 3px 0 rgba(0,0,0,.5);
@@ -1073,11 +1072,11 @@ border-radius: var(--border-radius-r);
 box-sizing: border-box;
 color: var(--color-text-alt);
 cursor: pointer;
-filter: brightness(1);
+filter: saturate(1);
 transition: all var(--animate-duration-fast) var(--animate-function); }
 
 [data-options="1"] > div label[for*="option"]:hover {
-filter: brightness(var(--brightness-up)); }
+filter: saturate(var(--saturate-up)); }
 
 [data-options="1"] > div label[for*="option"]:focus,
 [data-options="1"] > div label[for*="option"]:active {
@@ -1170,14 +1169,14 @@ border-radius: var(--border-radius-r);
 box-sizing: border-box;
 color: var(--color-text-alt);
 cursor: pointer;
-filter: brightness(1);
+filter: saturate(1);
 transition: all var(--animate-duration-fast) var(--animate-function); }
 
 [data-options="2"] > div:nth-of-type(even) {
 background-color: var(--color-accent); }
 
 [data-options="2"] > div:hover {
-filter: brightness(var(--brightness-up)); }
+filter: saturate(var(--saturate-up)); }
 
 [data-options="2"] > div label {
 flex: 1;
@@ -1241,11 +1240,11 @@ border-radius: var(--border-radius-r);
 box-sizing: border-box;
 color: var(--color-text-alt);
 cursor: pointer;
-filter: brightness(1);
+filter: saturate(1);
 transition: all var(--animate-duration-fast) var(--animate-function); }
 
 [data-options="3"] label[for*="option"]:hover {
-filter: brightness(var(--brightness-up)); }
+filter: saturate(var(--saturate-up)); }
 
 [data-options="3"] label[for*="option"]:focus,
 [data-options="3"] label[for*="option"]:active {
